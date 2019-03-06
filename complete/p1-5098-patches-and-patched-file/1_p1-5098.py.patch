@@ -1,0 +1,11 @@
+--- p1-5098.py	2017-02-20 12:54:18.285993300 -0500
++++ position/p1-5098.py	2017-02-20 12:50:29.442816700 -0500
+@@ -33,7 +33,7 @@
+     def empty_spot(self, key):
+         for position in self.positions[key]:
+             if self.board[position] == 0:
+-                return self.board[position]
++                return position
+ 
+     def two_in_a_row_or_block_opponent(self):
+         two_in_a_row = False

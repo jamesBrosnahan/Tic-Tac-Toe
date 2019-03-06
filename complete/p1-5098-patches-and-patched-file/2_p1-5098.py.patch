@@ -1,0 +1,29 @@
+--- p1-5098.py	2017-02-20 12:56:52.931567200 -0500
++++ AI/p1-5098.py	2017-02-20 12:49:45.180174100 -0500
+@@ -38,16 +38,19 @@
+     def two_in_a_row_or_block_opponent(self):
+         two_in_a_row = False
+         block = False
+-        for value in self.sums.itervalues():
+-            if value == 20:
+-                two_in_a_row = True
+-            elif value == 2:
+-                block = True
+         for key in self.sums:
+-            if self.sums[key] == 20 or ((self.sums[key] == 2 and not two_in_a_row) or (self.sums[key] == 10 and not two_in_a_row and not block)):
++            if self.sums[key] == 20:
+                 return self.empty_spot(key)
+         else:
+-            return self.random_move()
++            for key in self.sums:
++                if self.sums[key] == 2:
++                    return self.empty_spot(key)
++            else:
++                for key in self.sums:
++                    if self.sums[key] == 2:
++                        return self.empty_spot(key) 
++                else:
++                    return self.random_move()
+ 
+     def prompt_number_of_players(self):
+         print("Do you want to play against a computer or another user?")

@@ -1,0 +1,2 @@
+The empty_spot function was not returning the position and needed to be updated. Patch 1_p1-5098.py.patch fixes that. 
+Patch 2_p1-5098.py.patch updates the AI function but does not modidfy any of the program logic (it makes the code easy to read).

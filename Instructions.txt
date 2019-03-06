@@ -1,0 +1,16 @@
+3460:460/560  Artificial Intelligence and Heuristic Programming Spring 2017 Proj #1  (30 pts) 2/19/17
+Problem: Using Python to implement the Tic-Tac-Toe game to include the following.
+Interactive Inputs: Your program should provide a menu with the 
+following items:
+1. User vs. Computer: Prompt user to start first or program to start first.
+Prompt for user to choose strategy used by program:
+1. Beginner (Random)
+2. Expert (two-in-a-row + block oppenent)
+3. User vs. User
+4. Extend your program to play Tic-Tac-Toe on a 4 by 4 grid. 
+(Optional for 3460:460 students (10 extra points). Required for 560 students. Note: the winning is defined as 4-in-a-row.)
+5. Quit.
+
+Outputs: Use standard output.
+Submission: Name your source file as p1-xxxx.py, where xxxx is the last four digit of your student ID.
+Submit your source file using Springboard by the midnight of due day.
